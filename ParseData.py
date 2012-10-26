@@ -41,8 +41,8 @@ class Episode:
         print ('Episode info:', self.epid, self.minutes, self.bucket, self.varid,
         self.value, self.valuescale, self.valueshift, self.valid)
 
-#Read the lines of the data file
 
+#Read the lines of the data file
 def ReadDataFile():
     #Open data file physiologic-deid.csv
     datafile = open("physiologic-deid.csv")
@@ -60,7 +60,6 @@ def CreateListOfEpisodes():
         counter += 1
         print(counter)
 
-#Create class where for each episode id, we have a dictionary of all the episodes
 
 #Return the list of episodes based on the variable id
 def GetInfoByVarID(varID):
